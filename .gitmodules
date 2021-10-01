@@ -1,0 +1,6 @@
+[submodule "ClanServer"]
+	path = ClanServer
+	url = https://github.com/BtbN/ClanServer.git
+[submodule "kbinxmlcs"]
+	path = kbinxmlcs
+	url = https://github.com/FSH-B/kbinxmlcs.git

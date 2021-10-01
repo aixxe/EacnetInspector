@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EacnetInspector", "EacnetInspector\EacnetInspector.csproj", "{6EF68DBB-A511-4D99-BD2D-999FCD544C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eAmuseCore", "ClanServer\eAmuseCore\eAmuseCore.csproj", "{1175D6DB-7BBB-46F2-B960-D0687DAC51B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kbinxmlcs", "kbinxmlcs\kbinxmlcs\kbinxmlcs.csproj", "{7EE24A04-224E-4AF0-9E60-5E5E3290F501}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EF68DBB-A511-4D99-BD2D-999FCD544C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF68DBB-A511-4D99-BD2D-999FCD544C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF68DBB-A511-4D99-BD2D-999FCD544C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF68DBB-A511-4D99-BD2D-999FCD544C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1175D6DB-7BBB-46F2-B960-D0687DAC51B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1175D6DB-7BBB-46F2-B960-D0687DAC51B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1175D6DB-7BBB-46F2-B960-D0687DAC51B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1175D6DB-7BBB-46F2-B960-D0687DAC51B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE24A04-224E-4AF0-9E60-5E5E3290F501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE24A04-224E-4AF0-9E60-5E5E3290F501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE24A04-224E-4AF0-9E60-5E5E3290F501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE24A04-224E-4AF0-9E60-5E5E3290F501}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

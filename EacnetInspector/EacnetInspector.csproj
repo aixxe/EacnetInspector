@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{6EF68DBB-A511-4D99-BD2D-999FCD544C25}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>EacnetInspector</RootNamespace>
+        <AssemblyName>EacnetInspector</AssemblyName>
+        <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Fiddler, Version=5.0.20204.45441, Culture=neutral, PublicKeyToken=null">
+            <HintPath>$(LocalAppData)\Programs\Fiddler\Fiddler.exe</HintPath>
+        </Reference>
+        <Reference Include="Standard, Version=2.6.2.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath>$(LocalAppData)\Programs\Fiddler\Inspectors\Standard.dll</HintPath>
+        </Reference>
+        <Reference Include="SyntaxView, Version=2.6.2.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath>$(LocalAppData)\Programs\Fiddler\Inspectors\SyntaxView.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Web" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Xml.Linq" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="RequestInspector.cs" />
+        <Compile Include="ResponseInspector.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ClanServer\eAmuseCore\eAmuseCore.csproj">
+        <Project>{1175d6db-7bbb-46f2-b960-d0687dac51b2}</Project>
+        <Name>eAmuseCore</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\kbinxmlcs\kbinxmlcs\kbinxmlcs.csproj">
+        <Project>{7ee24a04-224e-4af0-9e60-5e5e3290f501}</Project>
+        <Name>kbinxmlcs</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
